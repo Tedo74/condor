@@ -11,33 +11,51 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="wrapper container">
         <header>
-            <div class="logo">
-                <h1>
-                    logo
-                </h1>
+
+            <div class="logo d-inline-block navbar-brand">
+                <h3 class="d-inline p-2  h1 ">
+                    LOGO
+                    <!-- <a href="#" class="navbar-brand">LOGO</a> -->
+                </h3>
             </div>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#">link1</a>
-                    </li>
-                    <li>
-                        <a href="#">link2</a>
-                    </li>
-                </ul>
+
+            <nav class="nav navbar navbar-expand-md mb-3 navbar-dark">
+
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="button" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="button" href=" #">Sports</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="button" href=" #">Casino</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="button" href=" #">Games</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </header>
 
         <main class="row">
             <section class="col-md-8">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eius quod delectus esse veritatis
-                    maxime
-                    quia
-                    sed iure corporis omnis ut, similique ex eum. Rem magnam autem perspiciatis deserunt reprehenderit?
-                </p>
+                <div class="main-content">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eius quod delectus esse veritatis
+                        maxime
+                        quia
+                        sed iure corporis omnis ut, similique ex eum. Rem magnam autem perspiciatis deserunt
+                        reprehenderit?
+                    </p>
+                </div>
             </section>
             <aside class="col-md-4">
                 <p>aside</p>
@@ -45,7 +63,23 @@
         </main>
 
         <footer>
-            <p>footer</p>
+            <nav class="nav navbar navbar-expand-md">
+                <p>Footer</p>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-item-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item-link" href=" #">Sports</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item-link" href=" #">Casino</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item-link" href=" #">Games</a>
+                    </li>
+                </ul>
+            </nav>
         </footer>
 
     </div>
