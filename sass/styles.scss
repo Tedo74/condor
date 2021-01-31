@@ -42,51 +42,57 @@ h1,
 header {
   background-color: var(--main-color);
   color: var(--main-text-color);
+
+  & .nav {
+    padding-bottom: 0;
+    & ul li {
+      display: block;
+      margin: 0 2px;
+    }
+  }
+
+  & .nav a {
+    text-decoration: none;
+    display: block;
+  }
+
+  & .nav ul {
+    margin-top: 30px;
+  }
 }
+
 main {
   min-height: 70vh;
-}
 
-footer {
-  background-color: var(--second-color);
-  color: var(--main-text-color);
-}
+  & .main-content {
+    height: 100%;
+    color: var(--main-text-color);
+    background-color: var(--third-color);
+    padding: 16px;
+    border: 8px solid var(--second-color);
 
-.main-content {
-  height: 100%;
-  color: var(--main-text-color);
-  background-color: var(--third-color);
-  padding: 16px;
-  border: 8px solid var(--second-color);
-}
+    & h1::after {
+      content: '';
+      display: block;
+      background-color: rgba(#ffffff34, 0.2);
+      border-top: 1px solid rgba(#000000c9, 0.8);
+      width: 98%;
+      height: 2px;
+      margin: px auto;
+    }
+  }
 
-.aside-menu {
-  height: 100%;
-  background-color: var(--main-color);
-  color: var(--main-text-color);
-  border: 8px solid #004444;
+  & .aside-menu {
+    height: 100%;
+    background-color: var(--main-color);
+    color: var(--main-text-color);
+    border: 8px solid #004444;
+  }
 }
 
 .logo {
   font-family: 'Londrina Solid', cursive;
   background-color: var(--second-color);
-}
-
-.nav ul {
-  margin-top: 30px;
-}
-
-.nav ul li {
-  display: block;
-  margin: 0 2px;
-}
-.nav {
-  padding-bottom: 0;
-}
-
-.nav a {
-  text-decoration: none;
-  display: block;
 }
 
 .button {
@@ -108,14 +114,23 @@ footer {
   color: var(--second-color);
 }
 
-.main-content h1::after {
-  content: '';
-  display: block;
-  background-color: rgba(#ffffff34, 0.2);
-  border-top: 1px solid rgba(#000000c9, 0.8);
-  width: 98%;
-  height: 2px;
-  margin: px auto;
+footer {
+  padding: 16px;
+  background-color: var(--second-color);
+  color: var(--main-text-color);
+
+  & p {
+    margin: 0;
+    margin-right: auto;
+  }
+
+  & .nav a {
+    color: var(--main-text-color);
+    padding-bottom: 3px;
+    display: block;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+  }
 }
 
 @media (min-width: 768px) {
