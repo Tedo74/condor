@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/Tedo74/condor/issues"
   },
-  "homepage": "https://github.com/Tedo74/condor#readme"
+  "homepage": "https://github.com/Tedo74/condor#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0"
+  }
 }
