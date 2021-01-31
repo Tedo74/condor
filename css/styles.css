@@ -57,9 +57,9 @@ main {
       display: block;
       background-color: rgba(255, 255, 255, 0.2);
       border-top: 1px solid rgba(0, 0, 0, 0.8);
-      width: 98%;
+      width: 100%;
       height: 2px;
-      margin: px auto; }
+      margin: 12px auto; }
   main .aside-menu {
     height: 100%;
     padding: 16px;
