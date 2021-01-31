@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@900&display=swap&text=LOG');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400;900&display=swap');
 
 :root {
-  --main-color: #203e3e;
+  --main-color: #002e2e;
   --second-color: #006969;
+  --third-color: #203e3e;
   --main-text-color: #ffffff;
 }
 
@@ -17,12 +19,26 @@
 
 html {
   box-sizing: border-box;
+  // font: normal 16px/1.5 'Roboto Slab', serif;
+}
+
+h1,
+.main-content p {
+  font-family: 'Roboto Slab', serif;
 }
 
 *,
 *::before,
 *::after {
   box-sizing: inherit;
+}
+
+.aside[class*='col-md'] {
+  padding-left: 0;
+}
+
+.main-section[class*='col-md'] {
+  padding-right: 0;
 }
 
 .wrapper {
@@ -40,13 +56,23 @@ main {
 }
 
 footer {
-  background-color: var(--main-color);
+  background-color: var(--second-color);
   color: var(--main-text-color);
 }
 
 .main-content {
-  background-color: var(--main-color);
+  height: 100%;
+  color: var(--main-text-color);
+  background-color: var(--third-color);
   padding: 16px 10px;
+  border: 8px solid var(--second-color);
+}
+
+.aside-menu {
+  height: 100%;
+  background-color: var(--main-color);
+  color: var(--main-text-color);
+  border: 8px solid #004444;
 }
 
 .logo {
