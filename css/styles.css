@@ -27,7 +27,7 @@ h1,
   box-sizing: inherit; }
 
 .wrapper {
-  padding: 1rem;
+  padding: 1rem 2.4rem;
   max-width: 1280px; }
 
 header {
@@ -94,12 +94,13 @@ main {
     background-color: var(--main-text-color);
     color: var(--second-color); }
   .button.button-share {
-    margin-right: 10px;
+    margin-right: 8px;
     border: none;
     cursor: pointer;
     background-color: gray;
-    width: 50px;
     display: flex; }
+    .button.button-share:not(:last-child) {
+      margin-right: 8px; }
     .button.button-sharei {
       justify-content: center;
       align-items: center; }
@@ -132,6 +133,19 @@ img {
   width: 350px;
   height: 200px; }
 
+.fixed-logo {
+  z-index: 1001;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  color: var(--main-text-color);
+  font-family: 'Londrina Solid', cursive;
+  font-size: 10px;
+  padding: 5px;
+  background-color: var(--second-color);
+  position: absolute;
+  left: 0;
+  top: 110px; }
+
 @media (min-width: 768px) {
   .aside[class*='col-md'] {
     padding-left: 0; }
@@ -140,4 +154,12 @@ img {
 
 @media (max-width: 1024px) {
   body {
-    font-size: 0.8rem; } }
+    font-size: 0.8rem; }
+  .button.button-share {
+    font-size: 0.5rem; }
+  main .aside-menu {
+    padding: 5px; } }
+
+@media (max-width: 768px) {
+  .fixed-logo {
+    display: none; } }
