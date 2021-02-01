@@ -146,9 +146,19 @@ img {
   left: 0;
   top: 110px; }
 
-.accordion,
-.accordion-main {
+.accordion-hide {
   display: none; }
+
+.accordion-show {
+  z-index: 1003;
+  display: block; }
+
+.accordion-content {
+  position: absolute;
+  top: -30px;
+  left: 0;
+  z-index: 1004;
+  background-color: #042904; }
 
 @media (min-width: 768px) {
   .aside[class*='col-md'] {
@@ -166,4 +176,8 @@ img {
 
 @media (max-width: 768px) {
   .fixed-logo {
-    display: none; } }
+    display: none; }
+  .accordion-content {
+    position: absolute;
+    top: -50px;
+    left: 115px; } }

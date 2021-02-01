@@ -199,11 +199,22 @@ img {
   top: 110px;
 }
 
-.accordion,
-.accordion-main {
+.accordion-hide {
   display: none;
 }
 
+.accordion-show {
+  z-index: 1003;
+  display: block;
+}
+
+.accordion-content {
+  position: absolute;
+  top: -30px;
+  left: 0;
+  z-index: 1004;
+  background-color: rgb(4, 41, 4);
+}
 @media (min-width: 768px) {
   .aside[class*='col-md'] {
     padding-left: 0;
@@ -231,5 +242,10 @@ img {
 @media (max-width: 768px) {
   .fixed-logo {
     display: none;
+  }
+  .accordion-content {
+    position: absolute;
+    top: -50px;
+    left: 115px;
   }
 }
