@@ -146,6 +146,10 @@ img {
   left: 0;
   top: 110px; }
 
+.accordion,
+.accordion-main {
+  display: none; }
+
 @media (min-width: 768px) {
   .aside[class*='col-md'] {
     padding-left: 0; }
