@@ -209,11 +209,24 @@ img {
 }
 
 .accordion-content {
+  padding: 5px;
+  width: 140px;
+  & a {
+    color: var(--main-text-color);
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    border-bottom: 1px solid white;
+    &:hover {
+      color: var(--main-color);
+      border-bottom: 1px solid var(--main-color);
+    }
+  }
   position: absolute;
   top: -30px;
   left: 0;
   z-index: 1004;
-  background-color: rgb(4, 41, 4);
+  background-color: var(--second-color);
 }
 @media (min-width: 768px) {
   .aside[class*='col-md'] {
@@ -244,6 +257,7 @@ img {
     display: none;
   }
   .accordion-content {
+    padding: 3px 5px;
     position: absolute;
     top: -50px;
     left: 115px;

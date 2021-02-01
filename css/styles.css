@@ -154,11 +154,22 @@ img {
   display: block; }
 
 .accordion-content {
+  padding: 5px;
+  width: 140px;
   position: absolute;
   top: -30px;
   left: 0;
   z-index: 1004;
-  background-color: #042904; }
+  background-color: var(--second-color); }
+  .accordion-content a {
+    color: var(--main-text-color);
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    border-bottom: 1px solid white; }
+    .accordion-content a:hover {
+      color: var(--main-color);
+      border-bottom: 1px solid var(--main-color); }
 
 @media (min-width: 768px) {
   .aside[class*='col-md'] {
@@ -178,6 +189,7 @@ img {
   .fixed-logo {
     display: none; }
   .accordion-content {
+    padding: 3px 5px;
     position: absolute;
     top: -50px;
     left: 115px; } }
